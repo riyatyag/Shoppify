@@ -6,8 +6,7 @@ import { ShopContext } from "../../Context/ShopContext";
 
 const ProductDisplay = (props) => {
   const { product } = props;
-
- const {addToCart} = useContext(ShopContext);
+  const {addToCart} = useContext(ShopContext)
   return (
     <div className="productDisplay">
       {console.log(props.product)}
@@ -34,17 +33,14 @@ const ProductDisplay = (props) => {
         </div>
         <div className="productdisplay-right-prices">
           <div className="productdisplay-right-price-old">
-            ${product.old_price}
+          ₹{product.old_price}
           </div>
           <div className="productdisplay-right-price-new">
-            ${product.new_price}
+          ₹{product.new_price}
           </div>
         </div>
         <div className="productdisplay-right-description">
-          Made from ultra-soft, high-quality cotton blend, this sweatshirt
-          ensures that your child stays warm and comfortable throughout the day.
-          The fabric is gentle on the skin, making it ideal for playtime,
-          school, or cozying up on chilly evenings.
+        Our clothing collection offers stylish and comfortable options for everyone—men, women, and kids. From casual wear to trendy outfits, each piece is designed for both fashion and function. Crafted with quality materials, they promise durability and comfort for all-day wear. Perfect for every occasion, these clothes bring out the best in every look.
         </div>
         <div className="productdisplay-right-size">
           <h1>Select Size</h1>
@@ -57,7 +53,6 @@ const ProductDisplay = (props) => {
           </div>
         </div>
         <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
-        <p className="productdisplay-right-category"><span>Category : </span>Woman, T-Shirt, Crop Top</p>
         <p className="productdisplay-right-category"><span>Tags : </span>Modern, latest</p>
       </div>
     </div>

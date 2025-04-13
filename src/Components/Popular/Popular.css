@@ -1,24 +1,143 @@
-.popular{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:10px;
-    height:90vh;
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.popular h1{
-    color: #171717;
-    font-size:50px;
-    font-weight:600;
+
+.popular h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
 }
-.popular hr{
-    width:200px;
-    height:6px;
-    border-radius: 10px;
-    background: #252525;
+
+.popular hr {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background: #252525;
+  margin: 0;
 }
-.popular-item{
-    margin-top:50px;
-    display:flex;
-    gap:30px;
-    
+
+.popular-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 20px;
+  gap: 20px;
 }
+
+.popular-item .collection-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center; 
+  overflow: hidden;
+  border: 1px solid #ddd;  
+  border-radius: 20px; 
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.popular-item .collection-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain; 
+  border-radius: 20px;
+  transition: transform 0.3s ease, border-radius 0.3s ease;
+}
+
+.popular-item .collection-item h2 {
+  color: #171717;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.popular-item .collection-item .price-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.popular-item .collection-item .new-price {
+  color: #ff4141;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.popular-item .collection-item .old-price {
+  color: #777;
+  font-size: 16px;
+  text-decoration: line-through;
+  font-weight: 400;
+}
+
+.popular-item .collection-item:hover img {
+  transform: scale(1.05);
+  border-radius: 25px; }
+
+  @media(max-width:1280px){
+    .popular{
+        height: 70vh;
+    }
+    .popular h1{
+        font-size: 40px;
+    }
+    .popular hr{
+        width: 160px;
+        height: 4px;
+    }
+    .popular-item{
+        gap: 20px;
+        margin-top: 30px;
+    }
+  }
+  @media(max-width:1024px){
+    .popular{
+        height: 60vh;
+    }
+    .popular h1{
+        font-size: 30px;
+    }
+    .popular hr{
+        width: 120px;
+        height: 3px;
+    }
+    .popular-item{
+        gap: 15px;
+        margin-top: 20px;
+    }
+  }
+  @media(max-width:800px){
+    .popular{
+        height: 50vh;
+        gap: 6px;
+    }
+    .popular h1{
+        font-size: 20px;
+    }
+    .popular hr{
+        width: 100px;
+    }
+    .popular-item{
+        gap: 5px;
+    }
+  }
+  @media(max-width:500px){
+    .popular{
+        height: 90vh;
+    }
+    .popular-item{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+  }

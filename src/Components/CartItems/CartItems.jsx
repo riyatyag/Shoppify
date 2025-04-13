@@ -25,9 +25,9 @@ const CartItems = () => {
               <div className="cartItems-format cartItems-format-main">
                 <img src={e.image} alt="" className="cartItem-product-icon" />
                 <p>{e.name}</p>
-                <p>$ {e.new_price}</p>
+                <p>₹ {e.new_price}</p>
                 <button className="cartItem-quantity">{cartItems[e.id]}</button>
-                <p>$ {e.new_price * cartItems[e.id]}</p>
+                <p>₹ {e.new_price * cartItems[e.id]}</p>
                 <img
                   className="cartItem-remove-icon"
                   src={remove_icon}
@@ -49,7 +49,7 @@ const CartItems = () => {
           <div>
             <div className="cartItems-total-item">
               <p>SubTotal</p>
-              <p>${getTotalCartAmount()}</p>
+              <p>₹{getTotalCartAmount()}</p>
             </div>
             <hr />
             <div className="cartItems-total-item">
@@ -59,7 +59,7 @@ const CartItems = () => {
             <hr />
             <div className="cartItems-total-item">
                 <h3>Total</h3>
-                <h3>${getTotalCartAmount()}</h3>
+                <h3>₹{getTotalCartAmount()}</h3>
             </div>
           </div>
           <button>PROCEED TO CHECKOUT</button>

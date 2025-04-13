@@ -10,10 +10,10 @@ const DescriptionBox = () => {
       </div>
       <div className="descriptionBox-description">
         <p>
-        Discover a wide range of clothing for men, women, and kids that combines comfort, style, and durability. Our collection includes everything from trendy outfits to classic essentials, perfect for any occasion. Crafted with care and attention to detail, each piece ensures a perfect fit for all ages. Shop now to find fashionable and practical options that cater to the entire family’s wardrobe needs.
+        Our diverse clothing collection caters to all ages and styles, offering the perfect balance of comfort and fashion. From laid-back casuals to smart essentials, each piece is crafted with care and quality. Designed to suit every individual’s unique style, it’s all about looking and feeling great. Perfect for any occasion, our clothing is here to elevate your wardrobe. 
         </p>
         <p>
-        Our collection offers stylish and comfortable clothing for men, women, and kids, ensuring every family member looks and feels great. From casual wear to smart attire, we have something for every occasion. With high-quality fabrics and a range of sizes, our pieces provide the perfect blend of fashion and functionality. Explore versatile styles designed to suit all ages and tastes, making dressing up fun and easy for everyone.
+        Step into style with our versatile clothing line, made for men, women, and kids alike. With a focus on comfort, durability, and contemporary trends, every piece is designed to fit seamlessly into your everyday life. Whether for work, play, or anything in between, our collection delivers on both fashion and function. Embrace timeless designs for every wardrobe.
         </p>
       </div>
     </div>
