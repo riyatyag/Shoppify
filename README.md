@@ -35,7 +35,8 @@ To run this project locally, follow these steps:
 
 ## 4. Start the development server:
    npm start
-The app will open in your default browser at http://localhost:3000.
+   
+## The app will open in your default browser at http://localhost:3000.
 
 ## Deployment
 This project is deployed on Netlify. Any changes pushed to the repository will automatically trigger a deployment to the live site.
