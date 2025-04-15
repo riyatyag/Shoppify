@@ -24,21 +24,18 @@ You can view the live version of the project here:(https://shoppify12.netlify.ap
 
 To run this project locally, follow these steps:
 
-1. Clone the repository:
-   ```bash
+## 1. Clone the repository:
    git clone https://github.com/your-username/shoppify.git
 
-  2. Navigate into the project folder:
-        ```bash
-       cd shoppify
-3. Install the required dependencies:
-'''bash
-   npm install
+## 2. Navigate into the project folder:
+          cd shoppify
+        
+ ## 3. Install the required dependencies:
+     npm install
 
-4. Start the development server:
-'''bash
+## 4. Start the development server:
    npm start
 The app will open in your default browser at http://localhost:3000.
 
-Deployment
+## Deployment
 This project is deployed on Netlify. Any changes pushed to the repository will automatically trigger a deployment to the live site.
